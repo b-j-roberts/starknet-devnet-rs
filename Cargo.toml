@@ -59,7 +59,7 @@ url = "2.4"
 
 # Starknet dependencies
 starknet_api = { version = "0.6.0-rc2", features = ["testing"] }
-blockifier = { version = "0.4.0-rc8", package = "blockifier" }
+blockifier = { path = "../blockifier/crates/blockifier", package = "blockifier" }
 starknet-rs-signers = { version = "0.7.0", package="starknet-signers" }
 starknet-rs-ff = { version = "0.3.6", package = "starknet-ff" }
 starknet-rs-core = {  version = "0.9.0", package = "starknet-core" }
@@ -69,19 +69,19 @@ starknet-rs-contract = { version = "0.8.0", package = "starknet-contract" }
 starknet-rs-crypto = { version = "0.6.1", package = "starknet-crypto" }
 
 # Cairo-lang dependencies
-cairo-lang-starknet = { version = "=2.4.0-rc6", package = "cairo-lang-starknet" }
-cairo-lang-compiler = "=2.4.0-rc6"
-cairo-lang-casm = "=2.4.0-rc6"
-cairo-lang-defs = "=2.4.0-rc6"
-cairo-lang-diagnostics = "=2.4.0-rc6"
-cairo-lang-filesystem = "=2.4.0-rc6"
-cairo-lang-lowering = "=2.4.0-rc6"
-cairo-lang-semantic = "=2.4.0-rc6"
-cairo-lang-sierra = "=2.4.0-rc6"
-cairo-lang-sierra-generator = "=2.4.0-rc6"
-cairo-lang-sierra-to-casm = "=2.4.0-rc6"
-cairo-lang-syntax = "=2.4.0-rc6"
-cairo-lang-utils = "=2.4.0-rc6"
+cairo-lang-starknet = { path = "../cairo/crates/cairo-lang-starknet", package = "cairo-lang-starknet" }
+cairo-lang-compiler = { path = "../cairo/crates/cairo-lang-compiler" }
+cairo-lang-casm = { path = "../cairo/crates/cairo-lang-casm" }
+cairo-lang-defs = { path = "../cairo/crates/cairo-lang-defs" }
+cairo-lang-diagnostics = { path = "../cairo/crates/cairo-lang-diagnostics" }
+cairo-lang-filesystem = { path = "../cairo/crates/cairo-lang-filesystem" }
+cairo-lang-lowering = { path = "../cairo/crates/cairo-lang-lowering" }
+cairo-lang-semantic = { path = "../cairo/crates/cairo-lang-semantic" }
+cairo-lang-sierra = { path = "../cairo/crates/cairo-lang-sierra" }
+cairo-lang-sierra-generator = { path = "../cairo/crates/cairo-lang-sierra-generator" }
+cairo-lang-sierra-to-casm = { path = "../cairo/crates/cairo-lang-sierra-to-casm" }
+cairo-lang-syntax = { path = "../cairo/crates/cairo-lang-syntax" }
+cairo-lang-utils = { path = "../cairo/crates/cairo-lang-utils" }
 
 # Inner dependencies
 starknet-types = { version = "0.0.1", path = "crates/starknet-devnet-types", package = "starknet-devnet-types" }
